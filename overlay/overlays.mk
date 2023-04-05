@@ -74,6 +74,12 @@ PRODUCT_PACKAGES += \
     OpenDeltaOverlay \
     UdfpsAnimations
 
+ifeq ($(TARGET_DISABLES_GMS), true)
+# Overlay (Vanilla build)
+PRODUCT_PACKAGES += \
+    VanillaFrameworksOverlay
+endif
+
 # Volume Styles
 PRODUCT_PACKAGES += \
     VolumeDoubleLayer \
