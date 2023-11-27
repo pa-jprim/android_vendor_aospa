@@ -74,6 +74,16 @@ PRODUCT_PACKAGES += \
     OpenDeltaOverlay \
     UdfpsAnimations
 
+# Volume Styles
+PRODUCT_PACKAGES += \
+    VolumeDoubleLayer \
+    VolumeGradient \
+    VolumeNeumorph \
+    VolumeNeumorphOutline \
+    VolumeOutline \
+    VolumeShadedLayer \
+    VolumeAOSPRevamped
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aospa/overlay/static
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospa/overlay/static
 
