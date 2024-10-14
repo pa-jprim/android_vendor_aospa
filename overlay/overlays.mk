@@ -87,7 +87,8 @@ PRODUCT_PACKAGES += \
 # Custom Clock Utility Overlays
 PRODUCT_PACKAGES += \
     HideSmartSpace \
-    SmartSpaceOffset
+    SmartSpaceOffset \
+    HideClock
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aospa/overlay/static
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospa/overlay/static
