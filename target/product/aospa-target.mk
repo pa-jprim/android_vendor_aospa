@@ -32,16 +32,20 @@ $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-ta
 # b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-# Aperture
-PRODUCT_PACKAGES += \
-    Aperture
+ifeq ($(TARGET_DISABLES_GMS), true)
+# Custom Clocks
+$(call inherit-product, vendor/SystemUIClocks/product.mk)
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.vendor.camera.privapp.list=org.lineageos.aperture.dev
-
-# Glimpse
+# Vanilla apps
 PRODUCT_PACKAGES += \
-    Glimpse
+    Dialer \
+    Etar \
+    ExactCalculator \
+    Glimpse \
+    GrapheneOSCamera \
+    Jelly \
+    LatinIME
+endif
 
 # Panic Button
 PRODUCT_PACKAGES += \
