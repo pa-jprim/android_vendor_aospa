@@ -34,11 +34,11 @@ $(call inherit-product, vendor/SystemUIClocks/product.mk)
 
 # Vanilla apps
 PRODUCT_PACKAGES += \
+    Aperture \
     Dialer \
     Etar \
     ExactCalculator \
     Glimpse \
-    GrapheneOSCamera \
     Jelly \
     LatinIME
 endif
