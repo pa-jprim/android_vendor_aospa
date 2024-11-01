@@ -16,7 +16,7 @@
 <resources>
 
    <!-- Property to read for ROM version -->
-   <string name="property_version">ro.aospa.version</string>
+   <string name="property_version">ro.aospa.version.string</string>
 
    <!-- Property to read for device identifier -->
    <string name="property_device">ro.aospa.device</string>
