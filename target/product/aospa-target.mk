@@ -47,6 +47,7 @@ $(call inherit-product, vendor/SystemUIClocks/product.mk)
 
 # Vanilla apps
 PRODUCT_PACKAGES += \
+    AvatarPicker \
     Aperture \
     Dialer \
     Etar \
